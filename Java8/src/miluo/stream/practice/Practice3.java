@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 
 /**
  * @className: Practice3
- * @description:
+ * @description: Java8函数式编程习题
  * @author: Miluo
  * @date: 2021/1/20
  **/

@@ -12,7 +12,9 @@ import java.util.stream.Stream;
  **/
 public class MaxOrMin {
     public static void main(String[] args) {
-        Integer i = Stream.of(9, 1, 2, 8, 7, 3, 4, 6, 5).max(Comparator.comparing(x -> x)).get();
+        Integer i = Stream.of(9, 1, 2, 8, 7, 3, 4, 6, 5)
+                .max(Comparator.comparing(x -> x))
+                .get();
         System.out.println(i);
 
     }

@@ -14,7 +14,9 @@ import java.util.stream.Stream;
 public class FlatMap {
     public static void main(String[] args) {
         //FlatMap将两个Stream合并为一个Stream
-        List<String> collect = Stream.of(Arrays.asList("a,b,c"), Arrays.asList("d,e,f")).flatMap(list -> list.stream()).collect(Collectors.toList());
+        List<String> collect = Stream.of(Arrays.asList("a,b,c"), Arrays.asList("d,e,f"))
+                .flatMap(list -> list.stream())
+                .collect(Collectors.toList());
         collect.forEach(System.out::println);
         //输出为：a,b,c
         //       d,e,f

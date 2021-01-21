@@ -7,7 +7,7 @@ import java.util.stream.Stream;
 
 /**
  * @className: Practice2
- * @description:
+ * @description: Java8函数式编程习题
  * @author: Miluo
  * @date: 2021/1/20
  **/
