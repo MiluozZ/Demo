@@ -14,7 +14,7 @@ public class Reduce {
         int[] arr = {9,1,2,8,7,3,4,6,5};
 
         //数组求和
-        //reduce第一个入参0为初始条件,同时也是第二个入参中的x的初始值，返回 x + y 则为下一次操作的x
+        //reduce第一个入参0为初始条件,同时也是第二个入参中的x的初始值。第二个为累加器，返回 x + y 则为下一次操作的x
         int reduce = Arrays.stream(arr).reduce(0, (x, y) -> x + y);
         System.out.println(reduce); //45
 
