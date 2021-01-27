@@ -1,0 +1,15 @@
+server:
+  port: 8000
+
+#日志设置：日志级别设为WARN,但Spring Security要用DEBUG级别
+logging:
+  file:
+    name: BookWorm.log
+    path: D:\PrivateSpace\Develop\IDEA Project\Demo\readlinglist
+  level:
+    root: WARN
+    org:
+      springframework:
+        security: DEBUG
+amazon:
+  associateId: Miluo
