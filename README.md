@@ -15,8 +15,11 @@
 ### readinglist
 - Spring Boot实战部分内容
 
+### taco-cloud
+- Spring项目
+
 ## 学习资料
---- 
+---
 ### Java8
 - Java8函数式编程
 - On Java8 
@@ -26,3 +29,6 @@
 
 ### readinglist
 - Spring Boot实战
+
+### taco-cloud
+- Spring实战
