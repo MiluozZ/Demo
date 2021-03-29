@@ -1,6 +1,6 @@
 package miluo.test;
 
-import java.util.LinkedList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -11,14 +11,10 @@ import java.util.List;
  **/
 public class Test {
     public static void main(String[] args) {
-        LinkedList<Integer> list = new LinkedList<>();
-        list.add(1);
-        list.add(2);
-        list.add(3);
-        list.add(4);
-
-        Integer integer = addList(list);
-        System.out.println(integer);
+        StringBuilder sb = new StringBuilder("1");
+        Long[] arr = new Long[]{2L,3L,4L,5L};
+        Arrays.stream(arr).forEach( x -> sb.append(",").append(String.valueOf(x)));
+        System.out.println(sb);
     }
 
     private static Integer addList(List<Integer> list){
