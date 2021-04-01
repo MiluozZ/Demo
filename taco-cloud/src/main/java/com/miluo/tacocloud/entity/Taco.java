@@ -2,6 +2,8 @@ package com.miluo.tacocloud.entity;
 
 import lombok.Data;
 
+import java.util.List;
+
 /**
  * @className: Taco
  * @description:
@@ -10,4 +12,6 @@ import lombok.Data;
  **/
 @Data
 public class Taco {
+    private String name;
+    private List<String> ingredients;
 }

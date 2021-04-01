@@ -3,9 +3,11 @@ package com.miluo.tacocloud.controller;
 import com.miluo.tacocloud.entity.Ingredient;
 import com.miluo.tacocloud.entity.Taco;
 import lombok.Data;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.Arrays;
@@ -18,6 +20,7 @@ import java.util.stream.Collectors;
  * @author: Miluo
  * @date: 2021/3/19
  **/
+@Slf4j
 @Controller
 @RequestMapping("/design")
 public class DesignTacoController {
@@ -49,5 +52,11 @@ public class DesignTacoController {
         return ingredients.stream().
                 filter(x-> x.getType().equals(type)).
                 collect(Collectors.toList());
+    }
+
+    @PostMapping
+    public String processDesign(Taco taco){
+        log.info("Taco Design :" + taco);
+        return "redirect:order/current";
     }
 }
