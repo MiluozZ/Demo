@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://thymelesf.org">
+      xmlns:th="http://www.thymelesf.org">
 <head>
-    <meta charset="UTF-8">
     <title>Taco Cloud</title>
     <link rel="stylesheet" th:href="@{/styles.css}"/>
 </head>
@@ -17,30 +16,46 @@
             </span>
     </div>
     <h3>Deliver my taco masterpieces to ...</h3>
-    <label for="name">Name:</label>
-    <input type="text" th:field="*{name}"/>
+    <label for="another">Name:</label>
+    <label>
+        <input type="text" th:field="*{name}"/>
+    </label>
     <br/>
     <label for="street">Street address:</label>
-    <input type="text" th:field="*{street}"/>
+    <label>
+        <input type="text" th:field="*{street}"/>
+    </label>
     <br/>
     <label for="city">City:</label>
-    <input type="text" th:field="*{city}"/>
+    <label>
+        <input type="text" th:field="*{city}"/>
+    </label>
     <br/>
     <label for="state">State:</label>
-    <input type="text" th:field="*{state}"/>
+    <label>
+        <input type="text" th:field="*{state}"/>
+    </label>
     <br/>
     <label for="zip">Zip code:</label>
-    <input type="text" th:field="*{zip}"/>
+    <label>
+        <input type="text" th:field="*{zip}"/>
+    </label>
     <br/>
     <h3>Here's how I'll pay..</h3>
     <label for="ccNumber">Credit Card #:</label>
-    <input type="text" th:field="*{ccNumber}"/>
+    <label>
+        <input type="text" th:field="*{ccNumber}"/>
+    </label>
     <br/>
     <label for="ccExpiration">Expiration:</label>
-    <input type="text" th:field="*{ccExpiration}"/>
+    <label>
+        <input type="text" th:field="*{ccExpiration}"/>
+    </label>
     <br/>
     <label for="ccCVV">CVV:</label>
-    <input type="text" th:field="*{ccCVV}"/>
+    <label>
+        <input type="text" th:field="*{ccCVV}"/>
+    </label>
     <br/>
     <input type="submit" value="Submit order"/>
 </form>

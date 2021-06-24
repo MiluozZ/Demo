@@ -1,6 +1,5 @@
 package miluo.test;
 
-import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -11,10 +10,12 @@ import java.util.List;
  **/
 public class Test {
     public static void main(String[] args) {
-        StringBuilder sb = new StringBuilder("1");
-        Long[] arr = new Long[]{2L,3L,4L,5L};
-        Arrays.stream(arr).forEach( x -> sb.append(",").append(String.valueOf(x)));
-        System.out.println(sb);
+        String  str = "D99|赔款|";
+        String[] split = str.split("\\|");
+        System.out.println(split[1]);
+//        String  str = "D99,赔款,";
+//        String[] split = str.split(",");
+//        System.out.println(split[1]);
     }
 
     private static Integer addList(List<Integer> list){
