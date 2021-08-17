@@ -1,4 +1,4 @@
-package miluo.util;
+package miluo.utils;
 
 import java.util.StringJoiner;
 
@@ -8,7 +8,7 @@ import java.util.StringJoiner;
  * @author: Miluo
  * @date: 2021/4/6
  **/
-public class StringJoinerTest {
+public class StringJoinerUtil {
     public static void main(String[] args) {
         StringJoiner stringJoiner = new StringJoiner(",");
         for (int i = 0; i < 10; i++) {

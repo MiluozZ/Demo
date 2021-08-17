@@ -1,4 +1,4 @@
-package miluo.util;
+package miluo.utils;
 
 import org.springframework.util.StopWatch;
 
@@ -21,7 +21,7 @@ import java.util.stream.IntStream;
  * 2.代码侵入式使用，需要改动多处代码
  * @date 2021/6/9
  **/
-public class StopWatchTest {
+public class StopWatchUtil {
     public static void main(String[] args) {
         StopWatch stopWatch = new StopWatch();
         stopWatch.start("test1");
